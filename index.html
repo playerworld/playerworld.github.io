@@ -38,6 +38,7 @@
                 });
                 pre.textContent += '\n\nTransaction pushed!\n\n' + JSON.stringify(result, null, 2);
             } catch (e) {
+              alert(e);
                 pre.textContent = '\nCaught exception: ' + e;
                 if (e instanceof eosjs_jsonrpc.RpcError)
                     pre.textContent += '\n\n' + JSON.stringify(e.json, null, 2);
