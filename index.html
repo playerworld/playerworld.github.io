@@ -13,7 +13,7 @@
     <script>
         let pre = document.getElementsByTagName('pre')[0];
         const defaultPrivateKey = "5JtUScZK2XEp3g9gh7F8bwtPTRAkASmNrrftmx4AxDKD5K4zDnr"; // bob
-        const rpc = new eosjs_jsonrpc.JsonRpc('http://api.eosnewyork.io');
+        const rpc = new eosjs_jsonrpc.JsonRpc('https://api.eosnewyork.io');
         const signatureProvider = new eosjs_jssig.JsSignatureProvider([defaultPrivateKey]);
         const api = new eosjs_api.Api({ rpc, signatureProvider });
 
