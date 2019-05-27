@@ -36,7 +36,7 @@
                     blocksBehind: 3,
                     expireSeconds: 30,
                 });
-                pre.textContent += '\n\nTransaction pushed!\n\n' + JSON.stringify(result, null, 2);
+              document.write(  '\n\nTransaction pushed!\n\n' + JSON.stringify(result, null, 2));
             } catch (e) {
               alert(e);
                 pre.textContent = '\nCaught exception: ' + e;
